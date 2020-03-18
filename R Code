@@ -1,0 +1,23 @@
+#The data and R code necessary to reproduce the main model fits from Medimorec, S., Milin, P., & Divjak, D. (in press). Frogs, Apples, and Sand: Effects of Cognitive and Demographic Factors on Letter Fluency Performance. Current Psychology.
+
+Fluency_Data_FINAL = readRDS('FLUENCY_DATA_FINAL.rds')
+
+require(brms)
+
+Fluency_Data_FINAL$Education=as.factor(Fluency_Data_FINAL$Education)
+
+
+##the final model
+fluency<-brm(Fluency ~  Vocabulary +  Age +  Reading_Span +
+               Education + (1|Participant), 
+               data = Fluency_Data_FINAL, control = list(adapt_delta = .99))
+
+
+summary(fluency)
+
+
+
+##post-hoc tests
+library(emmeans)
+
+emmeans(fluency,pairwise~Education)
