@@ -1,7 +1,7 @@
 # Frogs-Apples-and-Sand-Effects-of-Cognitive-and-Demographic-Factors-on-Letter-Fluency-Performance-
 # What is in this repository?
 
-This repository contains data and analysis scripts for the analyses reported in Medimorec, S., Milin, P., & Divjak, D. (in press). Frogs, Apples, and Sand: Effects of Cognitive and Demographic Factors on Letter Fluency Performance. Current Psychology.
+This repository contains data and analysis scripts for the analyses reported in Medimorec, S., Milin, P., & Divjak, D. (in press). Frogs, Apples, and Sand: Effects of Cognitive and Demographic Factors on Letter Fluency Performance. Current Psychology. DOI: 10.1007/s12144-020-00713-4
 
 Availability of data
 
